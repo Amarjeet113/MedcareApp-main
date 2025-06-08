@@ -80,8 +80,8 @@ public class UserController {
     @DeleteMapping("/{userId}")
     public ResponseEntity<?> deleteUser(@PathVariable String userId) {
 
-         userService.deleteUser(userId); // This returns a user or null
-            return ResponseEntity.ok("user deleted");
+        userService.deleteUser(userId); // This returns a user or null
+        return ResponseEntity.ok("user deleted");
 
     }
 
