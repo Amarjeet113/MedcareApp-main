@@ -14,7 +14,6 @@ public interface UserRepository extends MongoRepository<user, String> {
     List<user> findByUserId(String userId); // ✅ allow multiple users with same userId
     user findByPassword(String password);
     user findByMobileNo(String mobileNo);
-    // Optional: find user by multiple fields
     user findByEmailIdAndPassword(String emailId, String password);
     Optional<user> findFirstByUserId(String userId);
     default void deleteByUserid(String userId) {
